@@ -5,7 +5,6 @@ body {
     font-family: sans-serif;
     background-color: white;
     color: black;
-    padding-bottom: 50px; /* Add padding for footer space */
 }
 
 header {
@@ -17,7 +16,6 @@ header {
     height: 50px;
     line-height: 50px;
     background-color: #eee;
-    z-index: 10; /* Ensure the header stays on top */
 }
 
 header * {
@@ -34,8 +32,7 @@ header li {
 }
 
 section {
-    padding: 60px 20px 20px 20px; /* Added padding to create space from header */
-    min-height: 100vh;
+    height: 100vh;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -45,34 +42,57 @@ section {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    box-sizing: border-box; /* Prevent overflow */
 }
 
 #hero .profile-img {
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
     border-radius: 50%;
-    margin-bottom: 20px;
 }
 
 #hero .profile-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Zoom effect */
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
 #hero .travelpics2 {
-    width: 100%;
-    max-width: 250px;
+    width: 250px;
     border-radius: 10px;
     margin-top: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
 #hero .travelpics2:hover {
-    transform: scale(2.1);
+    transform: scale(2.1); /* Zoom effect */
+}
+
+.left-video {
+    float: left;
+    margin-right: 500px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
 }
 
 /* Video Playlist Grid */
@@ -130,7 +150,7 @@ section {
 }
 
 .contact-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Light Theme Media Queries */
@@ -148,23 +168,16 @@ section {
         width: 80%;
     }
 
+    #hero h1 {
+        font-size: 1.8em; /* Make font smaller on mobile */
+    }
+
     #hero .profile-img {
-        max-width: 200px;
+        width: 180px; /* Make image smaller on mobile */
     }
 
     #hero .travelpics2 {
-        max-width: 200px;
-    }
-
-    section {
-        padding-top: 80px; /* Add more top padding for mobile */
-    }
-
-    /* Disable hover effects on mobile */
-    #hero .profile-img:hover,
-    #hero .travelpics2:hover,
-    .contact-box:hover {
-        transform: none; /* Disable the hover zoom effect */
+        width: 200px; /* Make image smaller on mobile */
     }
 }
 
@@ -188,27 +201,24 @@ section {
         margin-bottom: 10px;
     }
 
+    #hero h1 {
+        font-size: 1.5em; /* Further reduce font size on smaller screens */
+    }
+
     #hero .profile-img {
-        max-width: 150px;
+        width: 120px; /* Reduce profile image size on small screens */
     }
 
     #hero .travelpics2 {
-        max-width: 150px;
+        width: 180px; /* Adjust travel pictures on smaller screens */
     }
 
-    section h1, section h2, section h3 {
-        font-size: 1.5em;
+    .video-description {
+        font-size: 1em; /* Smaller font size for video description */
     }
 
-    section {
-        padding-top: 100px; /* Increase padding for very small screens */
-    }
-
-    /* Disable hover effects on mobile */
-    #hero .profile-img:hover,
-    #hero .travelpics2:hover,
-    .contact-box:hover {
-        transform: none; /* Disable the hover zoom effect */
+    .contact-box {
+        font-size: 0.9em; /* Smaller text size for contact box */
     }
 }
 
