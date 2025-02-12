@@ -222,6 +222,21 @@ header a {
     }
 }
 
+/* Disable hover effect for mobile */
+@media (max-width: 768px) {
+    #hero .profile-img:hover {
+        transform: none; /* Disable hover zoom */
+    }
+
+    #hero .travelpics2:hover {
+        transform: none; /* Disable hover zoom */
+    }
+
+    .contact-box:hover {
+        transform: none; /* Disable hover zoom */
+    }
+}
+
 /* Light Mode Gradient Background for Hero, About, and Contact Sections */
 #hero {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('bg.jpg');
