@@ -167,6 +167,18 @@ header a {
     .contact-box {
         width: 80%;
     }
+
+    #hero h1 {
+        font-size: 1.8em; /* Make font smaller on mobile */
+    }
+
+    #hero .profile-img {
+        width: 180px; /* Make image smaller on mobile */
+    }
+
+    #hero .travelpics2 {
+        width: 200px; /* Make image smaller on mobile */
+    }
 }
 
 @media (max-width: 480px) {
@@ -187,6 +199,26 @@ header a {
     header li {
         margin-left: 10px;
         margin-bottom: 10px;
+    }
+
+    #hero h1 {
+        font-size: 1.5em; /* Further reduce font size on smaller screens */
+    }
+
+    #hero .profile-img {
+        width: 120px; /* Reduce profile image size on small screens */
+    }
+
+    #hero .travelpics2 {
+        width: 180px; /* Adjust travel pictures on smaller screens */
+    }
+
+    .video-description {
+        font-size: 1em; /* Smaller font size for video description */
+    }
+
+    .contact-box {
+        font-size: 0.9em; /* Smaller text size for contact box */
     }
 }
 
