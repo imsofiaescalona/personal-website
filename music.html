@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="me.jpg" class="profile-img">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="traveladventures.html">Travel Adventures</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <div class="section-inner">
+                <h1>My Music Playlist</h1>
+                <p> Listening to music is one of my favorite hobbies because it has the incredible ability to connect with my 
+                    emotions in ways words can't. No matter what I'm feeling, whether it's joy, sadness, or anything in between, 
+                    there's always a perfect song that speaks to me and expresses what I'm going through. Music helps me process my emotions, 
+                    reflect on my experiences, and often provides the comfort I need in different moments of my life. It's like having a soundtrack
+                     to my thoughts and feelings, making each moment feel a bit more meaningful. </p>
+
+                <div class="video-grid">
+                    <div class="video-item">
+                        <video controls>
+                            <source src="g.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="video-description">This is a new song by Giveon called Twenties. I've had this on repeat ever since it was released. </p>
+                    </div>
+                    <div class="video-item">
+                        <video controls>
+                            <source src="dc.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="video-description">This is Always, a song by Daniel Caesar. I like to listen to this at night when I get in my feels.</p>
+                    </div>
+                    <div class="video-item">
+                        <video controls>
+                            <source src="wf.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="video-description">Frank Ocean's White Ferrari is a poignant song about love and loss. I listen to this when I'm going through tough emotions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © Copyright Sofia Escalona, 2025        
+        <br>
+        <br>
+        <br>
+        <button id="theme-toggle">Toggle Theme</button>
+    </footer>
+    <script>
+        // JavaScript to toggle the dark theme class on the body element
+        document.getElementById("theme-toggle").onclick = function() {
+            document.body.classList.toggle("dark");
+        };
+    </script>
+</body>
+</html>
